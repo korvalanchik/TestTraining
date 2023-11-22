@@ -25,9 +25,7 @@ class SumCalculatorTest {
     }
     @Test
     void testSumWithParameterNullAndThrowsIllegalArgumentException() {
-        Assertions.assertThrows(IllegalArgumentException.class, () -> {
-            calc.sum(0);
-        });
+        Assertions.assertThrows(IllegalArgumentException.class, () -> calc.sum(0));
     }
 
 }
